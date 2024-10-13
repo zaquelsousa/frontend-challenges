@@ -1,8 +1,9 @@
 [
     {
-        "name": "Dia 01",
-        "description": "",
-        "thumbnail": "",
-        "liveDemoUrl": ""
+        "title": "Profile card",
+        "description": "impressionante como passa o tempo mas o que nao muda é dificuldade pra posicionar uma div na tela kkk",
+        "date":"13/10/2024",
+        "thumbnail": "../assets/miniaturas/profileCard.png",
+        "liveDemoUrl": "../desafios/profile-card-component-main/index.html"
     }
 ]

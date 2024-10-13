@@ -13,9 +13,13 @@ fetch('../desafios.json')
             img.src = challenge.thumbnail;
             thumbnail.appendChild(img);
 
-            const name = document.createElement('h4');
-            name.textContent = challenge.name
-            thumbnail.appendChild(name);
+            const title = document.createElement('h4');
+            title.textContent = challenge.title
+            thumbnail.appendChild(title);
+
+            const date = document.createElement('p');
+            date.textContent = challenge.date
+            thumbnail.appendChild(date);
 
             const description = document.createElement('p');
             description.textContent = challenge.description
