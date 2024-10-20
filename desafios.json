@@ -5,5 +5,12 @@
         "date":"13/10/2024",
         "thumbnail": "../assets/miniaturas/profileCard.png",
         "liveDemoUrl": "../desafios/profile-card-component-main/index.html"
+    },
+    {
+        "title": "Base apparel coming soon master",
+        "description": "Passei aperto para fazer isso dai, e ainda nao consegui atingir 100% do design, e tembém nem fiz a parte responsiva, fazer o que ne",
+        "date":"20/10/2024",
+        "thumbnail": "../assets/miniaturas/base apperel.png",
+        "liveDemoUrl": "../desafios/base-apparel-coming-soon-master/index.html"
     }
 ]

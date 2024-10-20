@@ -1,20 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
     font-size: 16px;
     font-family: 'Josefin Sans';
+    overflow: hidden;
+
+    /*seleciono o body resento o margin e pedding para que nao interfira com as demais divs, dps defino o backgrou como um degrade
+    tamanho da fonta, o foda é que estou usando pixels oq que é ruim para acessibilidade e resposividade, defino uma fonte é bloqueio o overflow para que a pagina 
+    nao scorlle ja que nao é para scrollar*/
 }
 
 #main {
     display: flex;
+    justify-content: end; /*alinha no eixo x*/
+    gap: 150px;
+    max-height: 100vh;
+
+    /*
+    coloco a main como flex para que posso alinhar as dives lado a lado, defino um alinhamento é um gap e coloco para ocupar todo o espaço da tela
+    */
+}
+
+.img {
+    max-height: 100vh;
+}
+
+.img img {
+    height: 100vh;
+    object-fit: cover;
 }
 
 .text {
-    margin-left: 150px;
-    margin-top: 50px;
+    padding-left: 250px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    /*aqui eu coloco um paddim pra arrumar o espacamento interno na div, para combinar com o desing, coloco o display flex e modifico para ao inves
+    de ficar no padrao que é lado a lado(row), ai ficam coluna um embaixo do outro*/
 }
 
 .text img {
     padding-bottom: 100px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: rgb(40, 33, 33)
+}
+
+.text span {
+    letter-spacing: 2;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%)
+}
+
+.textWrapper {
+    padding-right: 100px;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+}
+
+.inputEmail {
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid rgb(39, 38, 38);
+    width: 80%;
+    height: 6%;
+    border-radius: 25px;
+}
+
+.inputEmail input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /* padding-left: 20px; */
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+}
+
+
+.inputEmail button {
+    background-color: hsl(0, 36%, 70%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    height: 100%;
+    width: 20%;
+    border-radius: 25px;
+    border: none;
+    
 }
